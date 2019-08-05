@@ -5,7 +5,7 @@
 
   <test name="Selenium" >
     <classes>
-       <class name="testcases1.ExternalLinks_TC01" />
+       <class name="testcases.TC_01" />
     </classes>
   </test>
   

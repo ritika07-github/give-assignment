@@ -18,7 +18,7 @@ import selenium.SetUpSuite;
 
 public class TC_01 extends SetUpSuite {
 	
-	//@Test
+	@Test
 	public void verifyExternalLinks() throws InterruptedException{
 		
 		List<WebElement> ext_links = driver.findElements(By.xpath("//span[@id='External_links']//parent::h2//following-sibling::ul//li//a[@href]"));
@@ -33,7 +33,7 @@ public class TC_01 extends SetUpSuite {
 		Assert.assertEquals(driver.getWindowHandles().size(), 8, "All external links verified.");	
 	}
 	
-	//@Test
+	@Test
 	public void verifyFeaturedArticleOxygen(){
 		
 		WebDriverWait wait = new WebDriverWait(driver, 20);
@@ -42,7 +42,7 @@ public class TC_01 extends SetUpSuite {
 		Assert.assertEquals(driver.findElement(By.xpath("//div[@id='mw-indicator-featured-star']//a[@href]")).isDisplayed(), true); 
 	}
 	
-	//@Test
+	@Test
 	public void takeScreenShotOfElementProperties() throws IOException{
 		
 		File screenshot = ((TakesScreenshot)driver).getScreenshotAs(OutputType.FILE);
@@ -57,7 +57,7 @@ public class TC_01 extends SetUpSuite {
 		FileUtils.copyFile(screenshot, screenshot_loc);
 	}
 	
-	//@Test
+	@Test
 	public void verifyPlutoniumSuggestion(){
 		
 		driver.findElement(By.xpath("//input[@id='searchInput']")).sendKeys("Pluto");
