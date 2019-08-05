@@ -1,0 +1,12 @@
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd" >
+
+
+<suite name="GiveAssignment" >
+
+  <test name="Selenium" >
+    <classes>
+       <class name="testcases1.ExternalLinks_TC01" />
+    </classes>
+  </test>
+  
+</suite>
